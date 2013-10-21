@@ -1,0 +1,31 @@
+@(title: String = "", sidebarActive: Integer = 0, js: Seq[String] = Seq(), css: Seq[String] = Seq())(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>@title - Volunteer Connect Bank Management System</title>
+    <link rel="stylesheet" href="/assets/libraries/bootstrap-3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/assets/stylesheets/admin/main.css"/>
+    @for(link <- css) {
+    <link rel="stylesheet" href="@link"/>
+    }
+</head>
+<body>
+<h1 id="logo">VCBank Management System</h1>
+@navbar()
+@sidebar(sidebarActive)
+<div id="content">
+    @content
+    <div id="copyright">
+        <p>&copy; 2013 VCBank</p>
+        <p class="small">* Information displayed in this page is only for authorized administrators.</p>
+    </div>
+</div>
+<script src="/assets/libraries/jquery-1.10.2.min.js"></script>
+<script src="/assets/libraries/bootstrap-3.0.0/js/bootstrap.min.js"></script>
+<script src="/assets/javascripts/admin/common.js"></script>
+@for(link <- js) {
+<script src="@link"></script>
+}
+</body>
+</html>

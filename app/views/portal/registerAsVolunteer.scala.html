@@ -1,0 +1,86 @@
+@layout("Register as Volunteer"){
+<div id="signup-main" class="row">
+    <form id="user-info" class="col-lg-offset-2 col-lg-7">
+
+        <h2>Sign Up as Volunteer</h2>
+
+        <div class="form-group">
+            <label class="control-label" for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+            <p class="description">This will be your account identifier.</p>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="contactNumber">Contact Number</label>
+            <div class="input-group">
+                <span class="input-group-addon">+65</span>
+                <input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="Contact Number">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="nationality">Nationality</label>
+            <select id="nationality" name="nationality" class="form-control">
+                <option value="SG">Singapore</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="documentType">Identity Document</label>
+            <select id="documentType" name="documentType" class="form-control">
+                <option selected="selected" disabled="disabled">Please select...</option>
+                <option value="1">NRIC (Singaporean or PR)</option>
+                <option value="2">FIN (Foreigner)</option>
+                <option value="3">Passport</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="documentNumber" name="doc_info"
+                   placeholder="NRIC / FIN / Passport number">
+            <p class="description">Eg. G123456789</p>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="address1">Address</label>
+            <input type="text" class="form-control" id="address1" name="address1" placeholder="Address Line 1">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="address2" name="address2" placeholder="Address Line 2">
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="address1">Postal Code</label>
+            <input type="text" class="form-control" id="postalCode" name="postalCode" placeholder="Postal Code">
+        </div>
+
+        <div class="form-group">
+            <label class="control-label" for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <p class="description">At least 6 characters.</p>
+        </div>
+
+        <div class="form-group">
+            <div class="controls">
+                <input type="password" class="form-control" id="password2" placeholder="Confirm Passwordd">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input id="submit-button" class="btn btn-default" type="submit" class="btn" value="Register">
+        </div>
+    </form>
+</div>
+}
