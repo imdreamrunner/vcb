@@ -1,0 +1,93 @@
+h2 {
+  text-align: center;
+  color: #690;
+  font-family: 'Playball', cursive;
+  text-shadow: 0 1px #FFF;
+  font-size: 32px;
+}
+
+#category-button {
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 37px;
+  line-height: 37px;
+  margin: -47px 0 0 0;
+  text-align: center;
+  border-radius: 6px;
+  background: rgba(100, 100, 100, 0.15);
+  &:hover {
+    text-decoration: none;
+    background: rgba(100, 100, 100, 0.3);
+  }
+}
+
+#category-list {
+  display: none;
+  position: absolute;
+  padding: 0;
+  z-index: 2;
+  margin: -47px 0 0 112px;
+  li {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 37px;
+    margin: 0 2px;
+    a {
+      display: block;
+      width: 110px;
+      height: 37px;
+      line-height: 37px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.4);
+      border: 1px solid #DDD;
+      border-radius: 6px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+}
+
+.project-item {
+  height: 290px;
+  margin: 15px 0;
+  border: 4px solid rgba(200,200,200,0.1);
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(100, 100, 100, 0.2);
+
+  .image {
+    margin: 5px;
+    width: 276px;
+    height: 180px;
+    img {
+      width: 276px;
+      height: 180px;
+    }
+  }
+  .title {
+    color: #4c4c4c;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .description {
+    color: #acacac;
+    font-size: 14px;
+    margin: 0 5px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+  }
+  .funding-progress {
+    margin: 5px 0;
+    height: 16px;
+    background: lighten(#9c3, 30%);
+  }
+  .funding-progress-value {
+    height: 16px;
+    background: #9c3;
+  }
+
+}

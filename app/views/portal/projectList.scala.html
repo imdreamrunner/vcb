@@ -1,3 +1,74 @@
-@layout("Project List"){
-Project List
+@layout("Project List", 0, Seq("/assets/javascripts/portal/projectList.js"), Seq("/assets/stylesheets/portal/projectList.css")){
+
+<h2>Funding Projects</h2>
+
+<a id="category-button" href="javascript:">
+    <span class="glyphicon glyphicon-th-list"></span>
+    Category
+</a>
+
+<ul id="category-list">
+    <li><a href="javascript:">Children Care</a></li>
+    <li><a href="javascript:">Silver Care</a></li>
+</ul>
+
+<div id="funding-projects" class="row">
+    <div class="col-xs-4">
+        <div class="project-item">
+            <div class="image">
+                <a href="/project">
+                    <img src="/assets/images/_test/project1.jpg" />
+                </a>
+            </div>
+            <div class="title">Tobias Hengeveld, New Album!</div>
+            <div class="description">
+                This is some description. This is some description.
+                This is some description.
+            </div>
+            <div class="funding-progress">
+                <div class="funding-progress-value" style="width: 61%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <div class="project-item">
+            <div class="image"><img src="/assets/images/_test/project1.jpg" /></div>
+            <div class="title">Tobias Hengeveld, New Album!</div>
+            <div class="description">
+                This is some description. This is some description.
+                This is some description.
+            </div>
+            <div class="funding-progress">
+                <div class="funding-progress-value" style="width: 61%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <div class="project-item">
+            <div class="image"><img src="/assets/images/_test/project1.jpg" /></div>
+            <div class="title">Tobias Hengeveld, New Album!</div>
+            <div class="description">
+                This is some description. This is some description.
+                This is some description.
+            </div>
+            <div class="funding-progress">
+                <div class="funding-progress-value" style="width: 61%"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <div class="project-item">
+            <div class="image"><img src="/assets/images/_test/project1.jpg" /></div>
+            <div class="title">Tobias Hengeveld, New Album!</div>
+            <div class="description">
+                This is some description. This is some description.
+                This is some description.
+            </div>
+            <div class="funding-progress">
+                <div class="funding-progress-value" style="width: 61%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 }

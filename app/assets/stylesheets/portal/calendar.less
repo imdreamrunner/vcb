@@ -21,11 +21,31 @@ h2 {
     line-height: 20px;
     float: left;
     text-align: center;
+    color: #777;
   }
   .cell {
     width: 110px;
     height: 100px;
     float: left;
+    .day {
+      position: absolute;
+      margin: 10px 0 0 10px;
+    }
+    .event-list {
+      position: absolute;
+      margin: 30px 10px 10px 10px;
+      width: 90px;
+      a {
+        display: block;
+        background: red;
+        color: #FFF;
+        height: 18px;
+        line-height: 18px;
+        border-radius: 9px;
+        text-align: center;
+        margin: 2px 0;
+      }
+    }
   }
 
   .thead, .cell {
